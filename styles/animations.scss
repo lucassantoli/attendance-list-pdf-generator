@@ -1,0 +1,18 @@
+.colorful-animation {
+  background: $cyan;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $pink 15%, $orange 40%, $cyan 65%, $pink 90%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $pink 15%, $orange 40%, $cyan 65%, $pink 90%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 1000% auto;
+  
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: colorful 10s linear infinite;
+  @keyframes colorful {
+    to {
+      background-position: 100% center;
+    }
+  }
+}
